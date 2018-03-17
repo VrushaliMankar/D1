@@ -1,0 +1,28 @@
+<html>
+<title> Drop Down List</title>
+
+<body>
+<center>
+    <h3>Select Item from Drop down List and get your alert</h3>
+
+    <select onchange="selectGender(this)">
+        <option>Male</option>
+        <option>Female</option>
+    </select>  
+</center>   
+
+<script>
+    function selectGender(selectNode)
+    {
+        if(selectNode.selectIndex==1)
+        {
+            alert("You are Male");
+        }
+        else    
+        {
+            alert("Your are female");
+        }
+    }
+</script>
+</body>
+</html>
